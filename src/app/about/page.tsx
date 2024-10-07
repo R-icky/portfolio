@@ -49,6 +49,11 @@ const structure = [
         items: about.studies.institutions.map(institution => institution.name)
     },
     { 
+        title: about.certifications.title,
+        display: about.certifications.display,
+        items: about.certifications.cert.map(cert => cert.name)
+    },
+    { 
         title: about.technical.title,
         display: about.technical.display,
         items: about.technical.skills.map(skill => skill.title)
@@ -109,7 +114,8 @@ export default function About() {
                             <Icon
                                 onBackground="accent-weak"
                                 name="globe"/>
-                            {person.location}
+                                {person.languagetitle}
+                            {/* {person.location} */}
                         </Flex>
                         { person.languages.length > 0 && (
                             <Flex
@@ -305,6 +311,101 @@ export default function About() {
                                             onBackground="neutral-weak">
                                             {institution.description}
                                         </Text>
+                                    </Flex>
+                                ))}
+                            </Flex>
+                        </>
+                    )}
+
+                    { about.certifications.display && (
+                        <>
+                            <Heading
+                                as="h2"
+                                id={about.certifications.title}
+                                variant="display-strong-s"
+                                marginBottom="m">
+                                {about.certifications.title}
+                            </Heading>
+                            {/* <Flex
+                                direction="column"
+                                fillWidth gap="l" marginBottom="40">
+                                {about.work.experiences.map((experience, index) => (
+                                    <Flex
+                                        key={`${experience.company}-${experience.role}-${index}`}
+                                        fillWidth
+                                        direction="column">
+                                        <Flex
+                                            fillWidth
+                                            justifyContent="space-between"
+                                            alignItems="flex-end"
+                                            marginBottom="4">
+                                            <Text
+                                                id={experience.company}
+                                                variant="heading-strong-l">
+                                                {experience.company}
+                                            </Text>
+                                            <Text
+                                                variant="heading-default-xs"
+                                                onBackground="neutral-weak">
+                                                {experience.timeframe}
+                                            </Text>
+                                        </Flex> */}
+                            <Flex
+                                direction="column"
+                                fillWidth gap="l" marginBottom="40">
+                                {about.certifications.cert.map((cert, index) => (
+                                    <Flex
+                                        key={`${cert.name}-${index}`}
+                                        fillWidth gap="4"
+                                        direction="column">
+
+                                        <Flex
+                                            fillWidth
+                                            justifyContent="space-between"
+                                            alignItems="flex-end"
+                                            marginBottom="4">
+                                            <Text
+                                                id={cert.name}
+                                                variant="heading-strong-l">
+                                                {cert.name}
+                                            </Text>
+                                            <Text
+                                                variant="heading-default-xs"
+                                                onBackground="neutral-weak">
+                                                {cert.issuedate}
+                                            </Text>
+                                        </Flex>
+
+                                        {/* <Text
+                                            id={cert.name}
+                                            variant="heading-strong-l">
+                                            {cert.name}
+                                        </Text> */}
+                                        <Text
+                                            variant="body-default-s"
+                                            onBackground="brand-weak"
+                                            marginBottom="m">
+                                            {cert.institutions}
+                                        </Text>
+                                        {/* <Button
+                                            href={cert.credlink}
+                                            data-border="rounded"
+                                            variant="tertiary"
+                                            /> */}
+                                        <Button variant="tertiary" href={cert.credlink}>
+                                            Show Certification Credential
+                                            </Button>
+                                        {/* <Text
+                                            variant="body-default-s"
+                                            onBackground="brand-weak"
+                                            marginBottom="m">
+                                            {cert.issuedate}
+                                        </Text> */}
+                                        {/* <Text
+                                            variant="heading-default-xs"
+                                            onBackground="neutral-weak">
+                                            {cert.description}
+                                        </Text> */}
                                     </Flex>
                                 ))}
                             </Flex>

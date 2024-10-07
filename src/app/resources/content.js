@@ -1,15 +1,18 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Ricky',
+    firstName: 'Rick',
     lastName:  'Wong',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Cyber Security Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'United States',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Cantonese Chinese', 'Mandarin Chinese']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Cybersecurity Engineer',
+    // avatar:    '/images/avatar.jpg',
+    avatar:    '/images/avatar-rick.jpeg',
+    location:  'America/Los_Angeles',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languagetitle: 'Languages',
+    languages: ['English', 'Chinese - Cantonese', 'Chinese - Mandarin', 'Python', 'C', 'SQL'],  // optional: Leave the array empty if you don't want to display languages
+    skills: ['Splunk', 'Tableau', 'ServiceNow VMDR', '', '', '', 'Amazon Web Services (AWS)', 'Thread Modeling']
 }
 
 const newsletter = {
@@ -21,15 +24,15 @@ const newsletter = {
 const social = [
     // Links are automatically displayed.
     // Import new icons in /once-ui/icons.ts
-    {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
-    },
+    // {
+    //     name: 'GitHub',
+    //     icon: 'github',
+    //     link: 'https://github.com/once-ui-system/nextjs-starter',
+    // },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/ricky-wong-096597112',
     },
     {
         name: 'X',
@@ -39,7 +42,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:wwc102395@gmail.com',
     },
 ]
 
@@ -47,8 +50,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Cybersecurity Engineer and Builder</>,
+    subline: <>I'm Rick, a Cybersecurity Engineer at <InlineCode>Amazon Web Services (AWS)</InlineCode>, where I build and manage services that detect and automate the mitigation of cybersecurity threats across the organizationn’s infrastructure.<br/><br/> After hours, I build my own projects.</>
 }
 
 const about = {
@@ -64,7 +67,7 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://topmate.io/ricky_wong'
     },
     intro: {
         display: true,
@@ -76,9 +79,9 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Amazon Web Services (AWS)',
+                timeframe: '2023 - Present',
+                role: 'Security Engineer',
                 achievements: [
                     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
                     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
@@ -93,9 +96,19 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Western Union',
+                timeframe: '2020 - 2023',
+                role: 'Senior Information Security Analyst',
+                achievements: [
+                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Western Union (Contract)',
+                timeframe: '2019 - 2020',
+                role: 'Software Engineer',
                 achievements: [
                     <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
                     <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
@@ -106,15 +119,35 @@ const about = {
     },
     studies: {
         display: true, // set to false to hide this section
-        title: 'Studies',
+        title: 'Educations',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'University of California, Davis',
+                description: <>Bachelor of Science, Computer Science</>,
+            }
+        ]
+    },
+    certifications: {
+        display: true, // set to false to hide this section
+        title: 'Certifications',
+        cert: [
+            {
+                name: 'ISC2 Candidate',
+                institutions: 'ISC2',
+                issuedate: "Issued: Oct 2024",
+                credlink: "https://www.credly.com/badges/18cd7b7a-7532-4280-90ad-51b74e9dda2e/public_url"
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'CompTIA Security+',
+                institutions: 'CompTIA',
+                issuedate: "Issued: May 2024",
+                credlink: "https://www.credly.com/badges/34c4d727-f617-4c8c-977f-38feda9119c5/linked_in_profile"
+            },
+            {
+                name: 'AWS Certified Cloud Practitioner',
+                institutions: 'Amazon Web Services (AWS)',
+                issuedate: "Issued: Jan 2024",
+                credlink: "https://www.credly.com/badges/468c7940-0e55-4f3b-ac86-4f4da7c6a4ac/linked_in_profile"
             }
         ]
     },
