@@ -109,9 +109,9 @@ export default function Home() {
 					</Flex>
 				
 			</Flex>
-			<RevealFx translateY="16" delay={0.6}>
+			{/* <RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1,1]}/>
-			</RevealFx>
+			</RevealFx> */}
 			{/* {routes['/blog'] && (
 				<Flex fillWidth paddingX="20">
 					<Posts range={[1,2]} columns="2"/>
