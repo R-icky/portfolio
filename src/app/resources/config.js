@@ -15,8 +15,8 @@ const protectedRoutes = {
 }
 
 const effects = {
-    gradient: true,
-    dots:     true,
+    gradient: false,
+    dots:     false,
     lines:    false,
 }
 

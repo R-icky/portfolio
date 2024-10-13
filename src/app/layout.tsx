@@ -1,6 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
-
+import StarBackground from '@/app/components/StarBackground';
 import classNames from 'classnames';
 
 import { Flex, Background } from '@/once-ui/components'
@@ -90,6 +90,7 @@ export default function RootLayout({ children } : RootLayoutProps) {
 					gradient={effects.gradient}
 					dots={effects.dots}
 					lines={effects.lines}/>
+				<StarBackground />
 				<Flex
 					fillWidth
 					minHeight="16">

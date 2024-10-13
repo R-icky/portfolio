@@ -53,11 +53,11 @@ const structure = [
         display: about.certifications.display,
         items: about.certifications.cert.map(cert => cert.name)
     },
-    { 
-        title: about.technical.title,
-        display: about.technical.display,
-        items: about.technical.skills.map(skill => skill.title)
-    },
+    // { 
+    //     title: about.technical.title,
+    //     display: about.technical.display,
+    //     items: about.technical.skills.map(skill => skill.title)
+    // },
 ]
 
 export default function About() {
@@ -108,6 +108,7 @@ export default function About() {
                         <Avatar
                             src={person.avatar}
                             size="xl"/>
+                        <br></br>
                         <Flex
                             gap="8"
                             alignItems="center">
@@ -126,6 +127,29 @@ export default function About() {
                                         key={index}
                                         size="l">
                                         {language}
+                                    </Tag>
+                                ))}
+                            </Flex>
+                        )}
+                        <br></br>
+                        <Flex
+                            gap="8"
+                            alignItems="center">
+                            <Icon
+                                onBackground="accent-weak"
+                                name="website"/>
+                                {person.skilltitle}
+                            {/* {person.location} */}
+                        </Flex>
+                        { person.skills.length > 0 && (
+                            <Flex
+                                wrap
+                                gap="8">
+                                {person.skills.map((skill, index) => (
+                                    <Tag
+                                        key={index}
+                                        size="l">
+                                        {skill}
                                     </Tag>
                                 ))}
                             </Flex>
@@ -412,7 +436,7 @@ export default function About() {
                         </>
                     )}
 
-                    { about.technical.display && (
+                    {/* { about.technical.display && (
                         <>
                             <Heading
                                 as="h2"
@@ -462,7 +486,7 @@ export default function About() {
                                 ))}
                             </Flex>
                         </>
-                    )}
+                    )} */}
                 </Flex>
             </Flex>
         </Flex>

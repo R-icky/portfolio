@@ -12,6 +12,7 @@ const person = {
     location:  'America/Los_Angeles',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languagetitle: 'Languages',
     languages: ['English', 'Chinese - Cantonese', 'Chinese - Mandarin', 'Python', 'C', 'SQL'],  // optional: Leave the array empty if you don't want to display languages
+    skilltitle: 'Technical Skills',
     skills: ['Splunk', 'Tableau', 'ServiceNow VMDR', '', '', '', 'Amazon Web Services (AWS)', 'Thread Modeling']
 }
 
@@ -72,7 +73,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Rick is a highly skilled Security Engineer with expertise in vulnerability management, secure system design, and architecture. He excels at collaborating with cross-functional teams to deliver secure, scalable solutions that protect against emerging threats. With a strong focus on risk analysis and innovation, Rick consistently enhances organizational security and operational efficiency.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -83,8 +84,9 @@ const about = {
                 timeframe: '2023 - Present',
                 role: 'Security Engineer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>WIP</>,
+                    // <>Achieved a 90% vulnerability remediation rate within a single quarter by collaborating closely with remediation teams and driving initiatives for quick resolution.</>,
+                    // <>Developed Automated vulnerability ticketing workflows, eliminating manual Excel reporting and boosting operational efficiency.</>,
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -100,20 +102,69 @@ const about = {
                 timeframe: '2020 - 2023',
                 role: 'Senior Information Security Analyst',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Substantially reduced unmanaged risk within the organization, contributing to a more secure and resilient IT environment.</>,
+                    <>Achieved a 90% vulnerability remediation rate within a single quarter by collaborating closely with remediation teams and driving initiatives for quick resolution.</>,
+                    <>Developed Automated vulnerability ticketing workflows, eliminating manual Excel reporting and boosting operational efficiency.</>,
+                    <>Led the operation and maintenance of vulnerability scanning tools, ensuring continuous, accurate, and up-to-date assessments to safeguard enterprise systems.</>,
+                    <>Produced in-depth vulnerability reports and utilized Key Risk Indicators (KRIs) to deliver actionable insights that informed strategic security decisions.</>,
+                    <>Collaborated with cross-functional teams, including IT, engineering, and executive stakeholders, to develop comprehensive and effective vulnerability remediation plans.</>,
+                    <>Leveraged ServiceNow and Tableau to create real-time dashboards, significantly improving vulnerability tracking, visibility, and decision-making processes.</>,
+                    <>Enhanced the ServiceNow Vulnerability Response Module by developing and implementing new features, optimizing and automating vulnerability management workflows.</>,
+                    <>Delivered high-quality, data-driven analysis to inform and support the organization’s cybersecurity strategy.</>,
+                    <>Developed and tracked reliable metrics to measure the performance and success of the Cybersecurity Program, providing stakeholders with regular insights.</>,
+                    <>Created and maintained comprehensive status reports, ensuring all relevant teams were kept up to date on security progress and challenges.</>,
                 ],
-                images: [ ]
+                images: [
+                    {
+                        src: '/images/projects/work/servicenow-1.png',
+                        alt: 'ServiceNow',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/work/servicenow-2.png',
+                        alt: 'ServiceNow',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/work/qualys.png',
+                        alt: 'Qualys',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/work/tableau.png',
+                        alt: 'Qualys',
+                        width: 16,
+                        height: 9
+                    } 
+                ]
             },
             {
                 company: 'Western Union (Contract)',
                 timeframe: '2019 - 2020',
                 role: 'Software Engineer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Proactively monitored system performance and analyzed real-time data to identify potential bottlenecks, improving system reliability and uptime.</>,
+                    <>Diagnosed and resolved critical production issues, collaborating with cross-functional teams to implement timely remediation strategies and ensure minimal downtime.</>,
+                    <>Maintained and optimized production code, conducting debugging and troubleshooting to enhance performance and scalability in live environments.</>,
+                    <>Designed and developed automation systems and interactive dashboards, streamlining operational processes and providing actionable insights to stakeholders.</>,
                 ],
-                images: [ ]
+                images: [
+                    {
+                        src: '/images/projects/work/splunk.png',
+                        alt: 'Splunk',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/work/splunk-1.png',
+                        alt: 'Splunk',
+                        width: 16,
+                        height: 9
+                    } 
+                 ]
             }
         ]
     },
@@ -198,7 +249,7 @@ const blog = {
 }
 
 const work = {
-    label: 'Work',
+    label: 'Projects',
     title: 'My projects',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
