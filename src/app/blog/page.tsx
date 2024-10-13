@@ -71,9 +71,9 @@ export default function Blog() {
 				<Posts range={[1,3]}/>
 				<Posts range={[4]} columns="2"/>
 			</Flex>
-            {newsletter.display && (
+            {/* {newsletter.display && (
                 <Mailchimp/>
-            )}
+            )} */}
         </Flex>
     );
 }

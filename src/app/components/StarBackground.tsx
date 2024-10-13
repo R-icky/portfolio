@@ -2,52 +2,33 @@
 
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styles from './StarBackground.module.css';
 
-interface Star {
-  id: number;
-  size: number;
-  style: React.CSSProperties;
-}
-
 const StarBackground: React.FC = () => {
-  const [stars, setStars] = useState<Star[]>([]);
-
   useEffect(() => {
-    const generateStars = (count: number, size: number) => {
-      return Array.from({ length: count }, (_, i) => ({
-        id: i,
-        size,
-        style: {
-          left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 100}%`,
-          animationDuration: `${Math.random() * 100 + 50}s`,
-          animationDelay: `${Math.random() * 100}s`,
-        },
-      }));
+    const generateBoxShadows = (n: number): string => {
+      let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px #FFF`;
+      for (let i = 2; i <= n; i++) {
+        value += `, ${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px #FFF`;
+      }
+      return value;
     };
 
-    setStars([
-      ...generateStars(400, 1),  // Small stars
-      ...generateStars(200, 2),   // Medium stars
-      ...generateStars(50, 3),   // Large stars
-    ]);
+    const starsElement = document.getElementById('stars');
+    const stars2Element = document.getElementById('stars2');
+    const stars3Element = document.getElementById('stars3');
+
+    if (starsElement) starsElement.style.boxShadow = generateBoxShadows(800);
+    if (stars2Element) stars2Element.style.boxShadow = generateBoxShadows(250);
+    if (stars3Element) stars3Element.style.boxShadow = generateBoxShadows(100);
   }, []);
 
   return (
     <div className={styles.starBackground}>
-      {stars.map((star) => (
-        <div
-          key={star.id}
-          className={styles.star}
-          style={{
-            ...star.style,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-          }}
-        />
-      ))}
+      <div id="stars" className={styles.stars}></div>
+      <div id="stars2" className={styles.stars2}></div>
+      <div id="stars3" className={styles.stars3}></div>
     </div>
   );
 };

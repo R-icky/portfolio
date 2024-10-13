@@ -102,17 +102,12 @@ const about = {
                 timeframe: '2020 - 2023',
                 role: 'Senior Information Security Analyst',
                 achievements: [
-                    <>Substantially reduced unmanaged risk within the organization, contributing to a more secure and resilient IT environment.</>,
-                    <>Achieved a 90% vulnerability remediation rate within a single quarter by collaborating closely with remediation teams and driving initiatives for quick resolution.</>,
-                    <>Developed Automated vulnerability ticketing workflows, eliminating manual Excel reporting and boosting operational efficiency.</>,
-                    <>Led the operation and maintenance of vulnerability scanning tools, ensuring continuous, accurate, and up-to-date assessments to safeguard enterprise systems.</>,
-                    <>Produced in-depth vulnerability reports and utilized Key Risk Indicators (KRIs) to deliver actionable insights that informed strategic security decisions.</>,
-                    <>Collaborated with cross-functional teams, including IT, engineering, and executive stakeholders, to develop comprehensive and effective vulnerability remediation plans.</>,
-                    <>Leveraged ServiceNow and Tableau to create real-time dashboards, significantly improving vulnerability tracking, visibility, and decision-making processes.</>,
-                    <>Enhanced the ServiceNow Vulnerability Response Module by developing and implementing new features, optimizing and automating vulnerability management workflows.</>,
-                    <>Delivered high-quality, data-driven analysis to inform and support the organization’s cybersecurity strategy.</>,
-                    <>Developed and tracked reliable metrics to measure the performance and success of the Cybersecurity Program, providing stakeholders with regular insights.</>,
-                    <>Created and maintained comprehensive status reports, ensuring all relevant teams were kept up to date on security progress and challenges.</>,
+                    <>Substantially reduced unmanaged risk by leading the operation and maintenance of vulnerability scanning tools, ensuring accurate and up-to-date assessments for a secure IT environment.</>,
+                    <>Achieved a 90% vulnerability remediation rate within a quarter by collaborating with cross-functional teams, including IT, engineering, and executives, to develop and implement comprehensive remediation plans.</>,
+                    <>Automated vulnerability ticketing workflows, replacing manual Excel reporting, and enhanced the ServiceNow Vulnerability Response Module by implementing new features that streamlined and optimized vulnerability management.</>,
+                    <>Leveraged ServiceNow and Tableau to create real-time dashboards, significantly improving vulnerability tracking, visibility, and data-driven decision-making across the organization.</>,
+                    <>Produced in-depth vulnerability reports and tracked Key Risk Indicators (KRIs), delivering actionable insights and reliable metrics to measure cybersecurity performance and inform strategic decisions.</>,
+                    <>Delivered high-quality, data-driven analysis, creating status reports and dashboards to keep all stakeholders informed of the cybersecurity program’s progress and challenges.</>,
                 ],
                 images: [
                     {

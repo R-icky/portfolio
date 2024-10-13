@@ -1,31 +1,76 @@
 /* src/app/components/StarBackground.module.css */
 
-@keyframes twinkle {
-    0% { opacity: 0.5; }
-    50% { opacity: 1; }
-    100% { opacity: 0.5; }
-  }
-  
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    100% { transform: translateY(-2000px); }
-  }
-  
-  .starBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.starBackground {
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     overflow: hidden;
-    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   
-  .star {
+  .stars, .stars2, .stars3 {
     position: absolute;
-    background-color: #ffffff;
-    border-radius: 50%;
-    animation: twinkle 1s infinite ease-in-out, float linear infinite;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+  }
+  
+  .stars {
+    width: 1px;
+    height: 1px;
+    animation: animStar 30s linear infinite;
+  }
+  
+  .stars:after {
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+  }
+  
+  .stars2 {
+    width: 2px;
+    height: 2px;
+    animation: animStar 50s linear infinite;
+  }
+  
+  .stars2:after {
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+  }
+  
+  .stars3 {
+    width: 3px;
+    height: 3px;
+    animation: animStar 100s linear infinite;
+  }
+  
+  .stars3:after {
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-500px);
+    }
   }
   
