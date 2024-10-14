@@ -68,8 +68,8 @@ export default function Blog() {
             </Heading>
 			<Flex
 				fillWidth flex={1}>
-				<Posts range={[1,3]}/>
-				<Posts range={[4]} columns="2"/>
+				<Posts range={[1,5]}/>
+				<Posts range={[6]} columns="1"/>
 			</Flex>
             {/* {newsletter.display && (
                 <Mailchimp/>

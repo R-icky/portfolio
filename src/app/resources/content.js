@@ -68,12 +68,14 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://topmate.io/ricky_wong'
+        link: 'https://cal.com/rick-wong'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Rick is a highly skilled Security Engineer with expertise in vulnerability management, secure system design, and architecture. He excels at collaborating with cross-functional teams to deliver secure, scalable solutions that protect against emerging threats. With a strong focus on risk analysis and innovation, Rick consistently enhances organizational security and operational efficiency.</>
+        description: <>Rick is a highly skilled Security Engineer with expertise in vulnerability management, secure system design, and architecture. <br></br><br></br>
+        In addition to his strong risk analysis capabilities, Rick is also a builder who designs and implements services, including automations, to optimize systems and improve efficiency. <br></br><br></br>
+        He excels at collaborating with cross-functional teams to deliver secure, scalable solutions that consistently enhance organizational security and operational performance.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -89,12 +91,12 @@ const about = {
                     // <>Developed Automated vulnerability ticketing workflows, eliminating manual Excel reporting and boosting operational efficiency.</>,
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
+                    // {
+                    //     src: '/images/projects/project-01/cover-01.jpg',
+                    //     alt: 'Once UI Project',
+                    //     width: 16,
+                    //     height: 9
+                    // }
                 ]
             },
             {
@@ -237,7 +239,7 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
+    title: 'Writing about design, tech and random stuff...',
     description: `Read what ${person.name} has been up to recently`
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
