@@ -13,7 +13,7 @@ const person = {
     languagetitle: 'Languages',
     languages: ['English', 'Chinese - Cantonese', 'Chinese - Mandarin', 'Python', 'C', 'SQL'],  // optional: Leave the array empty if you don't want to display languages
     skilltitle: 'Technical Skills',
-    skills: ['Splunk', 'Tableau', 'ServiceNow VMDR', '', '', '', 'Amazon Web Services (AWS)', 'Thread Modeling']
+    skills: ['Splunk', 'Tableau', 'ServiceNow Vulnerability Response Module', 'Qualys', 'Axonius', 'Amazon Web Services (AWS)', 'Thread Modeling', 'PCI', 'FedRAMP', 'Microsoft Office']
 }
 
 const newsletter = {
