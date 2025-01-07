@@ -86,8 +86,13 @@ const about = {
                 timeframe: '2023 - Present',
                 role: 'Security Engineer',
                 achievements: [
-                    <>WIP</>,
+                    // <>WIP</>,
                     // <>Achieved a 90% vulnerability remediation rate within a single quarter by collaborating closely with remediation teams and driving initiatives for quick resolution.</>,
+                    <>Designed and implemented an internal service that reduced remediation campaign launch times by 90%, saving over 6 hours per campaign.</>,
+                    <>Partnered with service teams to execute large-scale vulnerability remediation campaigns, improving the security posture of AWS environments. Led efforts in AMI hardening, security patching, and compliance adherence for FedRAMP and PCI standards, reaching a 99.5% patch rate.</>,
+                    <>Built three scalable data pipelines and dashboards to report on vulnerability metrics, operation metrics, and remediation progress. Provided actionable insights for senior leadership, enabling prioritization of security initiatives and achieving measurable reductions in the vulnerability backlog.</>,
+                    <>Collaborated with service teams to identify and resolve challenges in patching customer-interdependent hosts, enhancing security and reducing operational delays.</>
+
                     // <>Developed Automated vulnerability ticketing workflows, eliminating manual Excel reporting and boosting operational efficiency.</>,
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
