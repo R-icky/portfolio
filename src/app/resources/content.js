@@ -185,6 +185,12 @@ const about = {
         title: 'Certifications',
         cert: [
             {
+                name: 'ISC2 Certified in Cybersecurity',
+                institutions: 'ISC2',
+                issuedate: "Issued: Nov 2024",
+                credlink: "https://www.credly.com/badges/86f99287-8ef5-4959-9479-d864b3457299"
+            },
+            {
                 name: 'ISC2 Candidate',
                 institutions: 'ISC2',
                 issuedate: "Issued: Oct 2024",
