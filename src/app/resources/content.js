@@ -13,7 +13,7 @@ const person = {
     languagetitle: 'Languages',
     languages: ['English', 'Chinese - Cantonese', 'Chinese - Mandarin', 'Python', 'C', 'SQL'],  // optional: Leave the array empty if you don't want to display languages
     skilltitle: 'Technical Skills',
-    skills: ['Splunk', 'Tableau', 'ServiceNow Vulnerability Response Module', 'Qualys', 'Axonius', 'Amazon Web Services (AWS)', 'Thread Modeling', 'PCI', 'FedRAMP', 'Microsoft Office']
+    skills: ['AppSec', 'Vulnerability Management', 'AI Security', 'Threat Modeling', 'Design and build Security Tools', 'PCI DSS 4.0', 'FedRAMP', 'PII Protection', 'Qualys', 'Axonius', 'AWS (Lambda, Redshift, S3, ECS, CDK, Bedrock)', 'Python', 'Java', 'SQL', 'FastAPI', 'ETL Pipelines', 'React', 'TypeScript', 'Tableau', 'QuickSight', 'ServiceNow Vulnerability Response', 'Splunk', 'CI/CD Security', 'Metrics Automation']
 }
 
 const newsletter = {
@@ -52,7 +52,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Cybersecurity Engineer and Builder</>,
-    subline: <>I'm Rick, a Cybersecurity Engineer at <InlineCode>Amazon Web Services (AWS)</InlineCode>, where I build and manage services that detect and automate the mitigation of cybersecurity threats across the organizationn’s infrastructure.<br/><br/> After hours, I build my own projects.</>
+    subline: <>I'm Rick, a Security Engineer at <InlineCode>Amazon Web Services (AWS)</InlineCode>, where I design and build AI-enhanced security tools, automate threat modeling, and strengthen platform security for high-visibility AI projects.<br/><br/> After hours, I build my own projects.</>
 }
 
 const about = {
@@ -86,14 +86,17 @@ const about = {
                 timeframe: '2023 - Present',
                 role: 'Security Engineer',
                 achievements: [
-                    // <>WIP</>,
-                    // <>Achieved a 90% vulnerability remediation rate within a single quarter by collaborating closely with remediation teams and driving initiatives for quick resolution.</>,
-                    <>Designed and implemented an internal service that reduced remediation campaign launch times by 90%, saving over 6 hours per campaign.</>,
-                    <>Partnered with service teams to execute large-scale vulnerability remediation campaigns, improving the security posture of AWS environments. Led efforts in AMI hardening, security patching, and compliance adherence for FedRAMP and PCI standards, reaching a 99.5% patch rate.</>,
-                    <>Built three scalable data pipelines and dashboards to report on vulnerability metrics, operation metrics, and remediation progress. Provided actionable insights for senior leadership, enabling prioritization of security initiatives and achieving measurable reductions in the vulnerability backlog.</>,
-                    <>Collaborated with service teams to identify and resolve challenges in patching customer-interdependent hosts, enhancing security and reducing operational delays.</>
-
-                    // <>Developed Automated vulnerability ticketing workflows, eliminating manual Excel reporting and boosting operational efficiency.</>,
+                    <>Executive AI Security Consultation: Provided security architecture guidance for high-visibility AI projects presented to the CEO and VP; assessed risks for integrations with external providers and enforced sandbox isolation requirements.</>,
+                    <>Security Automation Engineering: Designed and developed AI-enhanced security tools, including an automated threat modeler and a multi-agent code review system to accelerate manual security assessments.</>,
+                    <>Large Language Model (LLM) Security: Strengthened platform security by implementing input/output validation guardrails and developing robust data sanitization mechanisms for internal AI applications.</>,
+                    <>Proactive Risk Mitigation: Identified and remediated a critical PII exposure risk in critical service, preventing unauthorized audible access to sensitive customer data by unauthorized attendees.</>,
+                    <>Vulnerability Remediation at Scale: Reduced 99.99% of critical-severity, past-SLA vulnerabilities within one quarter through targeted remediation strategies and cross-team partnership.</>,
+                    <>Enterprise Access Control: Launched a company-wide critical access control campaign, achieving 92% completion in 30 days and 100% within 50 days by remediating over 4,700 over-permissioned material sets and IAM roles.</>,
+                    <>Compliance & Governance: Led remediation efforts for 178 services across 31 regions, achieving 99.99% patch compliance and securing the organization's first successful PCI audit for containerized environments.</>,
+                    <>Vulnerability Program Ownership: Owned the Customer Interdependency Program, reducing past-due critical vulnerabilities by 89% and decreasing the age of the oldest vulnerabilities by 59%.</>,
+                    <>Data Integrity for Leadership: Identified and corrected a 46% overcounting error (7.23M hosts) in executive business reporting, ensuring precise resource planning for organization leadership.</>,
+                    <>Real-time Metrics Pipelines: Built three scalable data pipelines monitoring vulnerability metrics and operational KPIs with real-time dashboards using QuickSight, Redshift, and Lambda.</>,
+                    <>Remediation Orchestration: Designed an internal remediation orchestration service that reduced campaign launch times by 90%, saving 6+ hours per deployment.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     // {
